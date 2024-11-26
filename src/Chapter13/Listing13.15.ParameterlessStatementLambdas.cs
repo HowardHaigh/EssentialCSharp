@@ -17,11 +17,12 @@ public class Program
                 {
                     input = Console.ReadLine();
                 }
-                while(!string.IsNullOrWhiteSpace(input));
+                while(string.IsNullOrWhiteSpace(input));
                 return input!;
             };
         //...
         #endregion INCLUDE
-        getUserInput();
+        string input = getUserInput();
+        Console.WriteLine(input);
     }
 }
